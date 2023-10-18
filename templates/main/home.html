@@ -1,0 +1,7 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+{% for i in object_list %}
+<img src="{{i.banner}}" alt="Rasm">
+    <h3>{{ i.title }}</h3>
+{% endfor %}
+{% endblock %}
